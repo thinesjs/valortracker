@@ -1,4 +1,4 @@
-<footer class="footer">ValorTracker is a non-official tracker and not endorsed by Riot Games in any way.</footer>
+<footer class="footer">{{ config('app.name', 'ValorTracker - Login') }} was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games.  Riot Games does not endorse or sponsor this project.</footer>
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
