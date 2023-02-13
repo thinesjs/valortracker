@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/izmizkdb/public_html/valortracker
+    - export REPOPATH=/home/izmizkdb/repositories/valortracker
+    - /bin/cp -R public/build $DEPLOYPATH
+    - /bin/cp -R public/images $DEPLOYPATH
