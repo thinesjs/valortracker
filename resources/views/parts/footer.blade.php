@@ -3,7 +3,6 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 @vite([
-            'resources/js/app.js',
             'resources/libs/apexcharts/dist/apexcharts.css',
             'resources/extra-libs/jvector/jquery-jvectormap-us-aea-en.js',
             'resources/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js',
