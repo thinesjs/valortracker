@@ -1,0 +1,225 @@
+#inventory {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    gap: 23px;
+    margin: auto;
+    /*background-color: #222222;*/
+}
+
+@media (max-height: 600px) {
+    #navbar {
+        height: 1000px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #inventory {
+        margin-left: 10%;
+    }
+}
+
+@media (orientation: portrait) {
+    #inventory {
+        margin-top: 15%;
+        margin-left: 20%;
+        max-width: 100%;
+        position: unset;
+    }
+
+    #html {
+        overflow-x: hidden;
+    }
+}
+
+#playerCard {
+    height: 366px;
+    margin-bottom: 0;
+    background: linear-gradient(to bottom, #ffffff1A,#ffffff1A,#ffffff1A,#ffffff00);
+    justify-content: unset;
+}
+
+.col:first-child div {
+    width: 156px;
+    height: 78px;
+}
+
+.col:nth-child(2) div {
+    width: 156px;
+    height: 112px;
+}
+
+.col:nth-child(3) div {
+    width: 251px;
+    height: 112px;
+}
+
+.col:nth-child(4) div {
+    width: 284px;
+    height: 112px;
+}
+
+.col:nth-child(5) div {
+    width: 303px;
+    height: 112px;
+}
+
+.col {
+    width: fit-content;
+}
+
+.col p {
+    height: 19px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    margin: 0;
+}
+
+.col:first-child p:nth-child(3) {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    margin: 0;
+    height: 28px;
+}
+
+.spray:nth-child(4), .spray:nth-child(5) {
+    margin-bottom: 4px;
+}
+
+.inventoryCell {
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 19px;
+    cursor: pointer;
+    background-color: rgba(112, 109, 109, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.col div p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    background-color: rgba(119, 118, 118, 0.13);
+}
+
+.inventoryCell:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#playerCard:hover {
+    background: linear-gradient(to bottom, #ffffff26,#ffffff26,#ffffff26,#ffffff00);
+}
+
+.col:nth-child(3) div:nth-child(3), .col:nth-child(5) div:nth-child(3), .col:nth-child(5) div:nth-child(6), .col:nth-child(3) div:nth-child(6), .col:nth-child(4) div:nth-child(5), .col:nth-child(5) div:nth-child(8) {
+    margin-bottom: 0;
+}
+
+.spray img {
+    width: 35% !important;
+}
+
+.col div img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+#classicImage, #frenzyImage {
+    width: 70%;
+}
+
+#meleeImage {
+    height: 90px;
+    width: auto;
+}
+
+#buckyImage, #aresImage, #marshalImage, #operatorImage, #odinImage {
+    width: 90%;
+}
+
+.col div div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cardImage {
+    height: 100% !important;
+    transition: 0.5s;
+
+}
+
+#playerCardImage {
+    margin: 0;
+    width: 100%;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
+}
+
+#cardContent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 220px;
+}
+
+#cardContent p:first-child {
+    background-color: #ffffbe;
+    color: black;
+}
+
+#cardContent p:nth-child(2) {
+    font-size: 75%;
+}
+
+.skinImage {
+    position: relative;
+}
+
+.skinImage img:nth-child(2) {
+    position: absolute;
+    height: 40px;
+    width: auto;
+    left: 10px;
+    bottom: 5px;
+}
+
+.wrapper {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin-bottom: 0px !important;
+    width: 100%;
+}
+.scrolls {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    white-space: nowrap
+}
+.scrolls div {
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mobile-display{display:block}
+.desktop-display{display:none}
+@media (min-width: 576px) {
+    .desktop-display {display:block}
+    .mobile-display {display:none}
+}
+
+
