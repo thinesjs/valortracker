@@ -49,7 +49,7 @@
                       @if(url()->previous() != url()->current())
                           <a href="{{ URL::previous() }}" class="btn btn-danger btn-rounded waves-effect waves-light m-b-40 text-white shadow mt-3"><i class="ri-arrow-left-s-line"></i> Back</a>
                       @endif
-                        <h6 class="fw-normal text-muted mb-0 mt-3">ValorTracker is a non-official application and is not endorsed by Riot Games in any way.</h6>
+                        <h6 class="fw-normal text-muted mb-0 mt-3">{{ config('app.name', 'ValorTracker - Login') }} was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games.  Riot Games does not endorse or sponsor this project.</h6>
                     </div>
 
               </div>
