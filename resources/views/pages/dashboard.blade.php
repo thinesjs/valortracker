@@ -55,14 +55,21 @@
                         <div class="d-flex align-items-center mb-3">
                             <div>
                                 <h3>Rank</h3>
-                                <h6 class="card-subtitle">{{ $playermmr->data->current_data->currenttierpatched }}</h6>
+                        
+                                @if (!empty($playermmr->data->current_data->currenttierpatched))
+                                    <h6 class="card-subtitle">{{ $playermmr->data->current_data->currenttierpatched }}</h6>
+                                @else
+                                <h6 class="card-subtitle">{{ !empty($playermmr->data->current_data->ranking_in_tier) ? $playermmr->data->current_data->ranking_in_tier : "Unrated" }}</h6>
+                                @endif
+                                
+                                
                             </div>
                             <div class="ms-auto">
                                 <span class="text-info display-6"><img class="card-img-top img-responsive " src="{{ $playermmr->data->current_data->images->small }}" alt="{{ $playermmr->data->current_data->currenttierpatched }}"></span>
                             </div>
                         </div>
                         <p class="card-text">
-                            {{ $playermmr->data->current_data->ranking_in_tier }}/100
+                            {{ !empty($playermmr->data->current_data->ranking_in_tier) ? $playermmr->data->current_data->ranking_in_tier : "0" }}/100
                         </p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="{{ $playermmr->data->current_data->ranking_in_tier }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $playermmr->data->current_data->ranking_in_tier }}%"></div>
@@ -84,7 +91,7 @@
                     <div class="col-md-5 border-end">
                       <div class="pe-4">
                         <h3 class="fs-8 d-flex align-items-center mb-0">
-                          {{ $playermmr->data->current_data->mmr_change_to_last_game }}
+                          {{ !empty($playermmr->data->current_data->mmr_change_to_last_game) ? $playermmr->data->current_data->mmr_change_to_last_gamer : "N/A" }}
                         </h3>
                         <h6 class="fw-normal text-muted mb-0">Last Change to Rank Rating</h6>
                         <h3 class="fs-8 d-flex align-items-center mb-0 mt-4">
@@ -99,7 +106,14 @@
                         @foreach($playerrr->Matches as $match)
                             <input type="hidden" value="{{ $match->RankedRatingEarned }}" id="match{{$i++}}">
                         @endforeach
-                        <div id="product-performance" class="ps-3"></div>
+                        @if (!empty($playermmr->data->current_data->mmr_change_to_last_game))
+                          <div id="product-performance" class="ps-3"></div>
+                        @else
+                            <div class="alert alert-light-danger d-flex align-items-center" role="alert">
+                              <i class="ri-error-warning-line me-2"></i>
+                              <div>Play few matches to display graph!</div>
+                            </div>
+                        @endif
                     </div>
                   </div>
                 </div>

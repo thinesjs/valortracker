@@ -78,7 +78,7 @@ class Authentication {
         $jar = new CookieJar();
         $addr = $this->address;
         $postData = json_decode('{"client_id": "play-valorant-web-prod","nonce": "1","redirect_uri": "https://playvalorant.com/opt_in","response_type": "token id_token","scope": "account openid"}');
-        $this->client->request("POST", "https://${addr}/api/v1/authorization", ["json"=>$postData, "cookies"=>$jar, "headers"=>$this->headers]);
+        $this->client->request("POST", "https://$addr/api/v1/authorization", ["json"=>$postData, "cookies"=>$jar, "headers"=>$this->headers]);
         return $jar;
     }
 
@@ -88,7 +88,7 @@ class Authentication {
         $addr = $this->address;
 
         $postData = json_decode('{"type":"auth", "username":"'.$this->username.'", "password":"'.$this->password.'", "remember":'.json_encode($this->remember).'}');
-        $response = $this->client->request("PUT","https://${addr}/api/v1/authorization",["json"=>$postData, "cookies"=>$session, "headers"=>$this->headers]);
+        $response = $this->client->request("PUT","https://$addr/api/v1/authorization",["json"=>$postData, "cookies"=>$session, "headers"=>$this->headers]);
         if(isset(json_decode((string) $response->getBody(),true)["error"])) return json_decode((string) $response->getBody());
         if (json_decode((string)$response->getBody())->type == "multifactor")
         {
