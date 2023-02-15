@@ -11,8 +11,13 @@
         <!-- ============================================================== -->
         <div class="page-titles">
             <div class="row">
-                <div class="col-lg-8 col-md-6 col-12 align-self-center">
+                <div class="col-lg-8 col-md-6 col-sm-8 col-6 align-self-center">
                     <h1 class="mb-0 fw-bold">Loadout</h1>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-4 col-6 d-md-flex align-items-center justify-content-end">
+                    <a href="" class="btn btn btn-rounded btn-light-info align-items-center ms-2">
+                        <i class="ri-share-box-line me-2"></i>Share Loadout
+                    </a>
                 </div>
             </div>
         </div>
@@ -23,7 +28,7 @@
         <!-- Container fluid  -->
         <!-- ============================================================== -->
         <div class="container-fluid">
-            <div class="animated pulse">
+            <div class="inventory-display animated pulse">
                 <div id="inventory">
                     <div class="col">
                         <p>PLAYER CARDS</p>
@@ -199,7 +204,226 @@
                     </div>
                 </div>
             </div>
-
+            <div class="mobile-display">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidearms" aria-expanded="false" aria-controls="collapseTwo">
+                            SIDEARMS
+                          </button>
+                        </h2>
+                        <div id="sidearms" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <div class="col">
+                                <div id="classic" weaponId="13" currentUUID="{{ $playerEntitlements->Guns[8]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[8]->ChromaID }}/fullrender.png" alt="Classic" id="classicImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[8]->CharmID){{ $playerEntitlements->Guns[8]->CharmID }}@endisset/displayicon.png" alt="" id="classicBuddy">
+                                    </div>
+                                    <p>CLASSIC</p>
+                                </div>
+                                <div id="shorty" weaponId="7" currentUUID="{{ $playerEntitlements->Guns[11]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[11]->ChromaID }}/fullrender.png" alt="Shorty" id="shortyImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[11]->CharmID){{ $playerEntitlements->Guns[11]->CharmID }}@endisset/displayicon.png" alt="" id="shortyBuddy">
+                                    </div>
+                                    <p>SHORTY</p>
+                                </div>
+                                <div id="frenzy" weaponId="15" currentUUID="{{ $playerEntitlements->Guns[7]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[7]->ChromaID }}/fullrender.png" alt="Frenzy" id="frenzyImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[7]->CharmID){{ $playerEntitlements->Guns[7]->CharmID }}@endisset/displayicon.png" alt="" id="frenzyBuddy">
+                                    </div>
+                                    <p>FRENZY</p>
+                                </div>
+                                <div id="ghost" weaponId="6" currentUUID="{{ $playerEntitlements->Guns[9]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[9]->ChromaID }}/fullrender.png" alt="Ghost" id="ghostImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[9]->CharmID){{ $playerEntitlements->Guns[9]->CharmID }}@endisset/displayicon.png" alt="" id="ghostBuddy">
+                                    </div>
+                                    <p>GHOST</p>
+                                </div>
+                                <div id="sheriff" weaponId="8" currentUUID="{{ $playerEntitlements->Guns[10]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[10]->ChromaID }}/fullrender.png" alt="Sheriff" id="sheriffImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[10]->CharmID){{ $playerEntitlements->Guns[10]->CharmID }}@endisset/displayicon.png" alt="" id="sheriffBuddy">
+                                    </div>
+                                    <p>SHERIFF</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#smg" aria-expanded="false" aria-controls="collapseTwo">
+                            SMGS
+                        </button>
+                      </h2>
+                      <div id="smg" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="col">
+                                <div id="stinger" weaponId="17" currentUUID="{{ $playerEntitlements->Guns[16]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[16]->ChromaID }}/fullrender.png" alt="Stinger" id="stingerImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[16]->CharmID){{ $playerEntitlements->Guns[16]->CharmID }}@endisset/displayicon.png" alt="" id="stingerBuddy">
+                                    </div>
+                                    <p>STINGER</p>
+                                </div>
+                                <div id="spectre" weaponId="16" currentUUID="{{ $playerEntitlements->Guns[15]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[15]->ChromaID }}/fullrender.png" alt="Spectre" id="spectreImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[15]->CharmID){{ $playerEntitlements->Guns[15]->CharmID }}@endisset/displayicon.png" alt="" id="spectreBuddy">
+                                    </div>
+                                    <p>SPECTRE</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shotgun" aria-expanded="false" aria-controls="collapseThree">
+                            SHOTGUNS
+                        </button>
+                      </h2>
+                      <div id="shotgun" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="col">
+                                <div id="bucky" weaponId="10" currentUUID="{{ $playerEntitlements->Guns[6]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[6]->ChromaID }}/fullrender.png" alt="Bucky" id="buckyImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[6]->CharmID){{ $playerEntitlements->Guns[6]->CharmID }}@endisset/displayicon.png" alt="" id="buckyBuddy">
+                                    </div>
+                                    <p>BUCKY</p>
+                                </div>
+                                <div id="judge" weaponId="5" currentUUID="{{ $playerEntitlements->Guns[5]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[5]->ChromaID }}/fullrender.png" alt="Judge" id="judgeImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[5]->CharmID){{ $playerEntitlements->Guns[5]->CharmID }}@endisset/displayicon.png" alt="" id="judgeBuddy">
+                                    </div>
+                                    <p>JUDGE</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rifle" aria-expanded="false" aria-controls="collapseThree">
+                            RIFLES
+                          </button>
+                        </h2>
+                        <div id="rifle" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <div class="col">
+                                <div id="bulldog" weaponId="3" currentUUID="{{ $playerEntitlements->Guns[3]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[3]->ChromaID }}/fullrender.png" alt="Bulldog" id="bulldogImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[3]->CharmID){{ $playerEntitlements->Guns[3]->CharmID }}@endisset/displayicon.png" alt="" id="bulldogBuddy">
+                                    </div>
+                                    <p>BULLDOG</p>
+                                </div>
+                                <div id="guardian" weaponId="11" currentUUID="{{ $playerEntitlements->Guns[13]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[13]->ChromaID }}/fullrender.png" alt="Guardian" id="guardianImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[13]->CharmID){{ $playerEntitlements->Guns[13]->CharmID }}@endisset/displayicon.png" alt="" id="guardianBuddy">
+                                    </div>
+                                    <p>GUARDIAN</p>
+                                </div>
+                                <div id="phantom" weaponId="9" currentUUID="{{ $playerEntitlements->Guns[4]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[4]->ChromaID }}/fullrender.png" alt="Phantom" id="phantomImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[4]->CharmID){{ $playerEntitlements->Guns[4]->CharmID }}@endisset/displayicon.png" alt="" id="phantomBuddy">
+                                    </div>
+                                    <p>PHANTOM</p>
+                                </div>
+                                <div id="vandal" weaponId="0" currentUUID="{{ $playerEntitlements->Guns[2]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[2]->ChromaID }}/fullrender.png" alt="Vandal" id="vandalImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[2]->CharmID){{ $playerEntitlements->Guns[2]->CharmID }}@endisset/displayicon.png" alt="" id="vandalBuddy">
+                                    </div>
+                                    <p>VANDAL</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            SNIPER RIFLES
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <div class="col">
+                                <div id="marshal" weaponId="12" currentUUID="{{ $playerEntitlements->Guns[14]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[14]->ChromaID }}/fullrender.png" alt="Marshal" id="marshalImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[14]->CharmID){{ $playerEntitlements->Guns[14]->CharmID }}@endisset/displayicon.png" alt="" id="marshalBuddy">
+                                    </div>
+                                    <p>MARSHAL</p>
+                                </div>
+                                <div id="operator" weaponId="14" currentUUID="{{ $playerEntitlements->Guns[12]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[12]->ChromaID }}/fullrender.png" alt="Operator" id="operatorImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[12]->CharmID){{ $playerEntitlements->Guns[12]->CharmID }}@endisset/displayicon.png" alt="" id="operatorBuddy">
+                                    </div>
+                                    <p>OPERATOR</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mg" aria-expanded="false" aria-controls="collapseThree">
+                            MACHINE GUNS
+                          </button>
+                        </h2>
+                        <div id="mg" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <div class="col">
+                                <div id="ares" weaponId="1" currentUUID="{{ $playerEntitlements->Guns[1]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[1]->ChromaID }}/fullrender.png" alt="Ares" id="aresImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[1]->CharmID){{ $playerEntitlements->Guns[1]->CharmID }}@endisset/displayicon.png" alt="" id="aresBuddy">
+                                    </div>
+                                    <p>ARES</p>
+                                </div>
+                                <div id="odin" weaponId="2" currentUUID="{{ $playerEntitlements->Guns[0]->ChromaID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskinchromas/{{ $playerEntitlements->Guns[0]->ChromaID }}/fullrender.png" alt="Odin" id="odinImage" loading="lazy">
+                                        <img src="https://media.valorant-api.com/buddies/@isset($playerEntitlements->Guns[0]->CharmID){{ $playerEntitlements->Guns[0]->CharmID }}@endisset/displayicon.png" alt="" id="odinBuddy">
+                                    </div>
+                                    <p>ODIN</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#knife" aria-expanded="false" aria-controls="collapseThree">
+                            MELEE
+                          </button>
+                        </h2>
+                        <div id="knife" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <div class="col">
+                                <div id="melee" weaponId="4" currentUUID="{{ $playerEntitlements->Guns[17]->SkinID }}" class="inventoryCell" data-bs-toggle="modal" data-bs-target="#dark-header-modal">
+                                    <div id="knifeImage" class="skinImage" onclick="">
+                                        <img src="https://media.valorant-api.com/weaponskins/{{ $playerEntitlements->Guns[17]->SkinID }}/displayicon.png" alt="Melee" id="meleeImage" loading="lazy">
+                                    </div>
+                                    <p>MELEE</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- ============================================================== -->
         <!-- End Container fluid  -->

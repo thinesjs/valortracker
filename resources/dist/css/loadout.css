@@ -222,4 +222,9 @@
     .mobile-display {display:none}
 }
 
-
+.mobile-display{display:block}
+.inventory-display{display:none}
+@media (min-width: 1336px) {
+    .inventory-display {display:block}
+    .mobile-display {display:none}
+}
