@@ -12,19 +12,24 @@
     "file": "assets/app-75b5a237.css",
     "src": "resources/js/app.css"
   },
-  "resources/dist/js/app.init.stylish.js": {
-    "file": "assets/app.init.stylish-c8ad0940.js",
-    "src": "resources/dist/js/app.init.stylish.js",
-    "isEntry": true
-  },
   "resources/dist/js/app-style-switcher.js": {
     "file": "assets/app-style-switcher-e822a5c0.js",
     "src": "resources/dist/js/app-style-switcher.js",
     "isEntry": true
   },
-  "resources/dist/js/app.min.js": {
-    "file": "assets/app.min-8b2d39d6.js",
-    "src": "resources/dist/js/app.min.js",
+  "resources/dist/js/custom-app.js": {
+    "file": "assets/custom-app-706071fb.js",
+    "src": "resources/dist/js/custom-app.js",
+    "isEntry": true
+  },
+  "resources/dist/js/app.init.stylish.js": {
+    "file": "assets/app.init.stylish-c8ad0940.js",
+    "src": "resources/dist/js/app.init.stylish.js",
+    "isEntry": true
+  },
+  "resources/extra-libs/jvector/jquery-jvectormap-us-aea-en.js": {
+    "file": "assets/jquery-jvectormap-us-aea-en-53247d04.js",
+    "src": "resources/extra-libs/jvector/jquery-jvectormap-us-aea-en.js",
     "isEntry": true
   },
   "resources/dist/js/login.js": {
@@ -32,9 +37,34 @@
     "src": "resources/dist/js/login.js",
     "isEntry": true
   },
-  "resources/dist/js/sidebarmenu.js": {
-    "file": "assets/sidebarmenu-b41af63f.js",
-    "src": "resources/dist/js/sidebarmenu.js",
+  "resources/dist/js/custom.min.js": {
+    "file": "assets/custom.min-df542942.js",
+    "src": "resources/dist/js/custom.min.js",
+    "isEntry": true
+  },
+  "resources/dist/js/app.min.js": {
+    "file": "assets/app.min-8b2d39d6.js",
+    "src": "resources/dist/js/app.min.js",
+    "isEntry": true
+  },
+  "resources/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js": {
+    "file": "assets/perfect-scrollbar.jquery.min-f1d8f670.js",
+    "src": "resources/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js",
+    "isEntry": true
+  },
+  "resources/dist/js/feather.min.js": {
+    "file": "assets/feather.min-82b7159c.js",
+    "src": "resources/dist/js/feather.min.js",
+    "isEntry": true
+  },
+  "resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js": {
+    "file": "assets/bootstrap.bundle.min-5d8c6124.js",
+    "src": "resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js",
+    "isEntry": true
+  },
+  "resources/libs/jquery/dist/jquery.min.js": {
+    "file": "assets/jquery.min-22eb66c4.js",
+    "src": "resources/libs/jquery/dist/jquery.min.js",
     "isEntry": true
   },
   "resources/dist/js/skinview.js": {
@@ -47,29 +77,9 @@
     "src": "resources/dist/js/scroll.js",
     "isEntry": true
   },
-  "resources/extra-libs/jvector/jquery-jvectormap-us-aea-en.js": {
-    "file": "assets/jquery-jvectormap-us-aea-en-53247d04.js",
-    "src": "resources/extra-libs/jvector/jquery-jvectormap-us-aea-en.js",
-    "isEntry": true
-  },
-  "resources/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js": {
-    "file": "assets/perfect-scrollbar.jquery.min-f1d8f670.js",
-    "src": "resources/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js",
-    "isEntry": true
-  },
-  "resources/dist/js/custom.min.js": {
-    "file": "assets/custom.min-df542942.js",
-    "src": "resources/dist/js/custom.min.js",
-    "isEntry": true
-  },
-  "resources/dist/js/custom-app.js": {
-    "file": "assets/custom-app-706071fb.js",
-    "src": "resources/dist/js/custom-app.js",
-    "isEntry": true
-  },
-  "resources/dist/js/feather.min.js": {
-    "file": "assets/feather.min-82b7159c.js",
-    "src": "resources/dist/js/feather.min.js",
+  "resources/dist/js/sidebarmenu.js": {
+    "file": "assets/sidebarmenu-b41af63f.js",
+    "src": "resources/dist/js/sidebarmenu.js",
     "isEntry": true
   },
   "resources/dist/js/waves.js": {
@@ -82,29 +92,9 @@
     "src": "resources/dist/js/moment.min.js",
     "isEntry": true
   },
-  "resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js": {
-    "file": "assets/bootstrap.bundle.min-5d8c6124.js",
-    "src": "resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js",
-    "isEntry": true
-  },
   "resources/extra-libs/sparkline/sparkline.js": {
     "file": "assets/sparkline-b904b2f3.js",
     "src": "resources/extra-libs/sparkline/sparkline.js",
-    "isEntry": true
-  },
-  "resources/libs/jquery/dist/jquery.min.js": {
-    "file": "assets/jquery.min-22eb66c4.js",
-    "src": "resources/libs/jquery/dist/jquery.min.js",
-    "isEntry": true
-  },
-  "resources/dist/js/graph.js": {
-    "file": "assets/graph-3405168e.js",
-    "src": "resources/dist/js/graph.js",
-    "isEntry": true
-  },
-  "resources/libs/jvectormap/jquery-jvectormap.min.js": {
-    "file": "assets/jquery-jvectormap.min-740a23bc.js",
-    "src": "resources/libs/jvectormap/jquery-jvectormap.min.js",
     "isEntry": true
   },
   "resources/js/app.js": {
@@ -118,6 +108,16 @@
     "assets": [
       "assets/remixicon-7a8ff692.woff2"
     ]
+  },
+  "resources/libs/jvectormap/jquery-jvectormap.min.js": {
+    "file": "assets/jquery-jvectormap.min-740a23bc.js",
+    "src": "resources/libs/jvectormap/jquery-jvectormap.min.js",
+    "isEntry": true
+  },
+  "resources/dist/js/graph.js": {
+    "file": "assets/graph-a5dbc45e.js",
+    "src": "resources/dist/js/graph.js",
+    "isEntry": true
   },
   "resources/libs/apexcharts/dist/apexcharts.min.js": {
     "file": "assets/apexcharts.min-42917c6c.js",

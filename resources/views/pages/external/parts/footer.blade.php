@@ -2,8 +2,8 @@
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 @vite([
-            'resources/libs/apexcharts/dist/apexcharts.css',
             'resources/extra-libs/jvector/jquery-jvectormap-us-aea-en.js',
             'resources/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js',
             'resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js',
@@ -19,7 +19,7 @@
             'resources/dist/js/skinview.js',
             'resources/dist/js/waves.js',
             'resources/extra-libs/sparkline/sparkline.js',
-            'resources/libs/apexcharts/dist/apexcharts.min.js',
+            'resources/libs/apexcharts/dist/apexcharts.css',
             'resources/libs/jvectormap/jquery-jvectormap.min.js',
             'resources/dist/js/graph.js',
         ])

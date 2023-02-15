@@ -95,7 +95,6 @@
                     </div>
                     <div class="col-md-7">
                         <h6 class="card-subtitle">Rank Rating trend for last 10 matches</h6>
-                        <h6 class="text-muted">NOTE: The graph is currently unavailable.</h6>
                         <?php $i = 0;?>
                         @foreach($playerrr->Matches as $match)
                             <input type="hidden" value="{{ $match->RankedRatingEarned }}" id="match{{$i++}}">
