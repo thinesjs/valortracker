@@ -32,7 +32,8 @@
                 <h1 class="error-title text-danger">500</h1>
                 <h3 class="text-uppercase error-subtitle">SERVER ERROR</h3>
                 <p class="text-muted m-t-30 m-b-30">Looks like you're navigating too fast! Give it some break and try again!</p>
-                <a href="{{route('/')}}" class="btn btn-danger btn-rounded waves-effect waves-light m-b-40 text-white shadow">Back to home</a>
+                <a href="" class="btn btn-info btn-rounded waves-effect waves-light m-b-40 text-white shadow">Refresh Page</a>
+                <a href="{{route('/')}}" class="btn btn-info btn-rounded waves-effect waves-light m-b-40 text-white shadow">Home</a>
             </div>
         </div>
         <!-- ============================================================== -->
