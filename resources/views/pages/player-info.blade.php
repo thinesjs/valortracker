@@ -107,7 +107,10 @@
                                         <div class="d-flex align-items-center">
                                             <div>
                                                 <h3>Last Competitive Result</h3>
-                                                <h6 class="card-subtitle">Played on {{ $playermmrhistory->data[0]->date }} in {{ $playerrankedhistory->data[0]->metadata->map }}</h6>
+                                                @empty($playermmrhistory->data[0]->date)
+                                                    <h6 class="card-subtitle">Played on {{ $playermmrhistory->data[0]->date }} in {{ $playerrankedhistory->data[0]->metadata->map }}</h6>
+                                                @endempty
+                                                
                                             </div>
                                             <div class="ms-auto">
                                                 <span class="badge text-bg-secondary me-3">{{ $playerrankedhistory->data[0]->metadata->mode }}</span>
