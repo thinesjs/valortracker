@@ -91,7 +91,7 @@
                     <div class="col-md-5 border-end">
                       <div class="pe-4">
                         <h3 class="fs-8 d-flex align-items-center mb-0">
-                          {{ !empty($playermmr->data->current_data->mmr_change_to_last_game) ? $playermmr->data->current_data->mmr_change_to_last_gamer : "N/A" }}
+                          {{ !empty($playermmr->data->current_data->mmr_change_to_last_game) ? $playermmr->data->current_data->mmr_change_to_last_game : "N/A" }}
                         </h3>
                         <h6 class="fw-normal text-muted mb-0">Last Change to Rank Rating</h6>
                         <h3 class="fs-8 d-flex align-items-center mb-0 mt-4">
