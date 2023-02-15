@@ -1,14 +1,7 @@
 @extends('parts.layout')
 
 @section('content')
-
-    <!-- ============================================================== -->
-    <!-- Page wrapper  -->
-    <!-- ============================================================== -->
     <div class="page-wrapper">
-        <!-- ============================================================== -->
-        <!-- Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
         <div class="page-titles">
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-12 align-self-center">
@@ -29,12 +22,6 @@
                 </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Container fluid  -->
-        <!-- ============================================================== -->
         <div class="container-fluid">
             <div class="card animated fadeInUp overflow-hidden static-card">
                 <div class="card-body">
@@ -84,8 +71,4 @@
             </div>
             <h6 class="animated fadeInUp text-muted">*The items of the bundle may take several minutes to hours to update after a new bundle is released.</h6>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Container fluid  -->
-        <!-- ============================================================== -->
-
 @endsection

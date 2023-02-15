@@ -1,14 +1,7 @@
 @extends('parts.layout')
 
 @section('content')
-
-    <!-- ============================================================== -->
-    <!-- Page wrapper  -->
-    <!-- ============================================================== -->
     <div class="page-wrapper">
-        <!-- ============================================================== -->
-        <!-- Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
         <div class="page-titles">
             @if(url()->previous() != url()->current())
                 <div class="col-lg-1 col-md-2 col-12 mb-3">
@@ -37,14 +30,7 @@
                 </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Container fluid  -->
-        <!-- ============================================================== -->
         <div class="container-fluid">
-            <!-- Nav tabs -->
             <ul class="nav nav-tabs animated fadeInUp" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link d-flex active" data-bs-toggle="tab" href="#overview" role="tab">
@@ -59,7 +45,6 @@
                     </a>
                 </li>
             </ul>
-            <!-- Tab panes -->
             <div class="tab-content animated fadeInUp">
                 <div class="tab-pane p-3 active" id="overview" role="tabpanel">
                     <div class="p-3">
@@ -167,7 +152,4 @@
                 </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Container fluid  -->
-        <!-- ============================================================== -->
 @endsection

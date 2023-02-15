@@ -1,15 +1,7 @@
 @extends('parts.layout')
 
 @section('content')
-
-    <!-- ============================================================== -->
-    <!-- Page wrapper  -->
-    <!-- ============================================================== -->
     <div class="page-wrapper">
-        <!-- ============================================================== -->
-        <!-- Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-
         <div class="page-titles">
             <div class="row">
                 @if(url()->previous() != url()->current())
@@ -37,19 +29,9 @@
               "
                 >
                 </div>
-{{--                <div class="text-end">--}}
-{{--                    <p href="" class="text-grey"></p>--}}
-{{--                </div>--}}
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Container fluid  -->
-        <!-- ============================================================== -->
         <div class="container-fluid">
-            <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link d-flex active" data-bs-toggle="tab" href="#info" role="tab">
@@ -70,7 +52,6 @@
                     </a>
                 </li>
             </ul>
-            <!-- Tab panes -->
             <div class="tab-content">
                 <div class="tab-pane p-3 active" id="info" role="tabpanel">
                     <div class="p-3">
@@ -177,8 +158,4 @@
                 </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Container fluid  -->
-        <!-- ============================================================== -->
-
 @endsection

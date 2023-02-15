@@ -1,14 +1,7 @@
 @extends('parts.layout')
 
 @section('content')
-
-      <!-- ============================================================== -->
-      <!-- Page wrapper  -->
-      <!-- ============================================================== -->
       <div class="page-wrapper">
-        <!-- ============================================================== -->
-        <!-- Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
         <div class="page-titles">
           <div class="row">
             <div class="col-lg-8 col-md-6 col-12 align-self-center">
@@ -25,14 +18,7 @@
             </div>
           </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Container fluid  -->
-        <!-- ============================================================== -->
         <div class="container-fluid">
-          <!-- row -->
           <div class="row animated fadeInUp">
             <div class="col-lg-8">
                 <div class="card text-white bg-dark">
@@ -62,7 +48,6 @@
                                 <h6 class="card-subtitle">{{ !empty($playermmr->data->current_data->ranking_in_tier) ? $playermmr->data->current_data->ranking_in_tier : "Unrated" }}</h6>
                                 @endif
                                 
-                                
                             </div>
                             <div class="ms-auto">
                                 <span class="text-info display-6"><img class="card-img-top img-responsive " src="{{ $playermmr->data->current_data->images->small }}" alt="{{ $playermmr->data->current_data->currenttierpatched }}"></span>
@@ -78,7 +63,6 @@
                 </div>
             </div>
 
-            <!-- column -->
             <div class="col-lg">
               <div class="card w-100 animated fadeInUp static-card">
                 <div class="card-body">
@@ -119,11 +103,6 @@
                 </div>
               </div>
             </div>
-            <!-- column -->
           </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Container fluid  -->
-        <!-- ============================================================== -->
-
 @endsection

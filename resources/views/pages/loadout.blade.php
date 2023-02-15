@@ -1,32 +1,14 @@
 @extends('parts.layout')
 
 @section('content')
-
-    <!-- ============================================================== -->
-    <!-- Page wrapper  -->
-    <!-- ============================================================== -->
     <div class="page-wrapper">
-        <!-- ============================================================== -->
-        <!-- Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
         <div class="page-titles">
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-sm-8 col-6 align-self-center">
                     <h1 class="mb-0 fw-bold">Loadout</h1>
                 </div>
-                {{-- <div class="col-lg-4 col-md-6 col-sm-4 col-6 d-md-flex align-items-center justify-content-end">
-                    <a data-bs-toggle="modal" data-bs-target="#share-loadout" class="btn btn-sm btn-rounded btn-light-info align-items-center ms-2">
-                        <i class="ri-share-box-line me-2"></i>Share Loadout
-                    </a>
-                </div> --}}
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Container fluid  -->
-        <!-- ============================================================== -->
         <div class="container-fluid">
             <div class="inventory-display animated pulse">
                 <div id="inventory">
@@ -425,12 +407,6 @@
                 </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Container fluid  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Skin Chooser Modal  -->
-        <!-- ============================================================== -->
         <div id="dark-header-modal" class="modal fade" tabindex="-1" aria-labelledby="dark-header-modalLabel" style="display: none;" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
