@@ -1,0 +1,1 @@
+var r=$("#login-form"),t=$("#submit-btn");r.on("submit",function(e){t.attr("disabled","disabled");var a='<span role="status" aria-hidden="true" class="spinner-border spinner-border-sm align-self-center me-2"></span>';t.html()!==a&&(t.data("original-text",t.html()),t.html(a))});

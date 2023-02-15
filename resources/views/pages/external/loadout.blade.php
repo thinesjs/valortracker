@@ -1,4 +1,4 @@
-@extends('parts.layout')
+@extends('pages.external.parts.layout')
 
 @section('content')
 

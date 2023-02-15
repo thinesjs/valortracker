@@ -176,4 +176,47 @@ class DashboardController extends Controller
 
         return view("pages.player-info", compact('playerdata', 'playerDetails', 'playermmr', 'playermmrhistory', 'playerrankedhistory', 'playerMatches', 'matchScore', 'matchDetails', 'matchMaps'));
     }
+
+    public function accountInfo()
+    {
+        $authObject = new Authentication();
+        $henrikAPI = new HenrikAPIController();
+        $authTokens = $authObject->reAuth();
+
+        $playerdata = $authObject->getPlayer($authTokens);
+        $playerId = $playerdata->sub;
+
+        $playerDetails = $henrikAPI->getPlayerData($playerId);
+        $playermmr = $authObject->getPlayerMMR($playerDetails->data->name,$playerDetails->data->tag);
+        $playermmrhistory = $henrikAPI->getPlayerMMRHistory($playerId);
+        $playerrankedhistory = $henrikAPI->getPlayerRankedMatchHistory($playerId);
+
+        return view("pages.account", compact('playerdata', 'playerDetails', 'playermmr', 'playermmrhistory', 'playerrankedhistory'));
+    }
+
+    public function shareAccount(Request $request)
+    {
+        $encryptedId = $request->id;
+        $playerId = decrypt($encryptedId);
+
+        $authObject = new Authentication();
+        $henrikAPI = new HenrikAPIController();
+        $authTokens = $authObject->reAuth();
+
+        $playerDetails = $henrikAPI->getPlayerData($playerId);
+        $playermmr = $authObject->getPlayerMMR($playerDetails->data->name,$playerDetails->data->tag);
+
+        return view("pages.external.account", compact('playermmr', 'playerDetails'));
+    }
+
+    public function shareAccountLoadout(Request $request)
+    {
+        $authObject = new Authentication();
+
+        $authTokens = $authObject->reAuth();
+        $playerdata = $authObject->getPlayer($authTokens);
+        $playerEntitlements = $authObject->getPlayerEntitlements($playerdata->sub, $authTokens);
+
+        return view("pages.external.loadout", compact('playerdata', 'playerEntitlements'));
+    }
 }

@@ -36,7 +36,7 @@
             <div class="card border shadow-sm static-card">
               <div class="card-body">
                 <div class="row justify-content-center mb-4">
-                    <img src="images/logo.png" class="w-25">
+                    <img src="images/logo.png" class="w-25" href="{{ route('about') }}">
                 </div>
                 @if (session('error'))
                     <div class="alert alert-danger d-flex align-items-center" role="alert">
@@ -46,22 +46,21 @@
                         </div>
                     </div>
                 @endif
-                <form action="{{ route ('auth') }}" method="post">
+                <form action="{{ route ('auth') }}" method="post" id="login-form">
                     @csrf
                     <input type="text" name="username" id="" class="form-control my-4 py-2 rounded" placeholder="Riot Username" value="{{ old('username') }}" />
                     <span class="text-rose-900">@error('username'){{ $message }} @enderror</span>
                     <input type="password" name="password" id="" class="form-control my-4 py-2 rounded" placeholder="Riot Password" />
                     <span class="text-rose-900">@error('password'){{ $message }} @enderror</span>
-{{--                    <div class="form-check form-switch">--}}
-{{--                      <input class="form-check-input" type="checkbox" role="switch" id="remember" value="true" name="rememberMe">--}}
-{{--                      <label class="form-check-label" for="remember">Remember Me</label>--}}
-{{--                    </div>--}}
-
                     <div class="text-center mt-3 d-grid">
-                        <button class="btn btn-primary waves-effect waves-light shadow-sm rounded">Login</button>
+                        <button id="submit-btn" class="btn btn-primary waves-effect waves-light shadow-sm rounded">Login</button>
                     </div>
                 </form>
               </div>
+            </div>
+            <div class="text-center">
+              <a href="{{ route('about') }}">About ValorTracker</a>
+              <p class="text-muted text-center">ValorTracker was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</p>
             </div>
           </div>
         </div>
@@ -70,6 +69,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     @vite('resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js')
     @vite('resources/dist/js/custom.min.js')
+    @vite('resources/dist/js/login.js')
     @vite('resources/dist/js/app.min.js')
     @vite('resources/dist/js/app.init.stylish.js')
     @vite('resources/dist/js/app-style-switcher.js')

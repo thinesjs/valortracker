@@ -1,4 +1,4 @@
-@extends('parts.layout')
+@extends('pages.external.parts.layout')
 
 @section('content')
 
@@ -12,7 +12,7 @@
         <div class="page-titles">
           <div class="row">
             <div class="col-lg-8 col-md-6 col-12 align-self-center">
-              <h1 class="mb-0 fw-bold">Dashboard</h1>
+              <h1 class="mb-0 fw-bold">Account</h1>
             </div>
             <div
               class="
@@ -37,13 +37,13 @@
             <div class="col-lg-8">
                 <div class="card text-white bg-dark">
                     <img class="card-img img-responsive"
-                         src="https://media.valorant-api.com/playercards/{{ $playerdata->PlayerCardID }}/wideart.png"
+                         src="{{ $playerDetails->data->card->wide }}"
                          alt="Player Card">
                     <div class="card-img-overlay">
                         <div class="card-body">
-                            <h3 class="card-title mb-0 text-white">{{ $playerdata->acct->game_name }}</h3>
+                            <h3 class="card-title mb-0 text-white">{{ $playerDetails->data->name }}</h3>
                             <p class="card-text text-white-50 fs-3 fw-normal">
-                                #{{ $playerdata->acct->tag_line }}
+                                #{{ $playerDetails->data->tag }}
                             </p>
                         </div>
                     </div>
@@ -70,43 +70,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- column -->
-            <div class="col-lg">
-              <div class="card w-100 animated fadeInUp static-card">
-                <div class="card-body">
-                  <div class="d-md-flex align-items-center">
-                    <div>
-                      <h3 class="card-title">Competitive Performance</h3>
-                    </div>
-                  </div>
-                  <div class="row mt-4">
-                    <div class="col-md-5 border-end">
-                      <div class="pe-4">
-                        <h3 class="fs-8 d-flex align-items-center mb-0">
-                          {{ $playermmr->data->current_data->mmr_change_to_last_game }}
-                        </h3>
-                        <h6 class="fw-normal text-muted mb-0">Last Change to Rank Rating</h6>
-                        <h3 class="fs-8 d-flex align-items-center mb-0 mt-4">
-                          {{ 100 - $playermmr->data->current_data->ranking_in_tier }}
-                        </h3>
-                        <h6 class="fw-normal text-muted mb-0">Rank Rating needed to Rank Up</h6>
-                      </div>
-                    </div>
-                    <div class="col-md-7">
-                        <h6 class="card-subtitle">Rank Rating trend for last 10 matches</h6>
-                        <h6 class="text-muted">NOTE: The graph is currently unavailable.</h6>
-                        <?php $i = 0;?>
-                        @foreach($playerrr->Matches as $match)
-                            <input type="hidden" value="{{ $match->RankedRatingEarned }}" id="match{{$i++}}">
-                        @endforeach
-                        <div id="product-performance" class="ps-3"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- column -->
           </div>
         </div>
         <!-- ============================================================== -->

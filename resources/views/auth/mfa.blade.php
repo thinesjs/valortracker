@@ -33,14 +33,14 @@
                         </div>
                     </div>
                 @endif
-                <form action="{{ route ('auth') }}" method="post">
+                <form action="{{ route ('auth') }}" method="post" id="login-form">
                     @csrf
                     <input type="hidden" name="mfa" value="true">
                     <input type="number" name="multifactorcode" id="" class="form-control my-4 py-2 rounded" placeholder="Riot 2FA" value="{{ old('multifactorcode') }}" required/>
                     <span class="text-rose-900">@error('multifactorcode'){{ $message }} @enderror</span>
 
                     <div class="text-center mt-3 d-grid">
-                        <button class="btn btn-primary waves-effect waves-light shadow-sm rounded">Submit</button>
+                        <button id="submit-btn" class="btn btn-primary waves-effect waves-light shadow-sm rounded">Submit</button>
                     </div>
                 </form>
               </div>
@@ -52,6 +52,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     @vite('resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js')
     @vite('resources/dist/js/custom.min.js')
+    @vite('resources/dist/js/login.js')
     @vite('resources/dist/js/app.min.js')
     @vite('resources/dist/js/app.init.stylish.js')
     @vite('resources/dist/js/app-style-switcher.js')

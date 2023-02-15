@@ -20,11 +20,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [RiotAuthController::class, 'login'])->name('/')->middleware('guest');
 Route::get('about', function () { return view('pages.about'); })->name('about');
 Route::get('login', [RiotAuthController::class, 'login'])->name('login')->middleware('guest');
-//Route::get('mfa', [RiotAuthController::class, 'mfa'])->middleware('guest');;
+
+//sharing routes
+Route::get('share/{id}', [DashboardController::class, 'shareAccount'])->name('share-account');
+Route::get('share/{id}/loadout', [DashboardController::class, 'shareAccountLoadout'])->name('share-account-loadout');
 
 
 
-Route::get('test', function () { return view('pages.test'); })->name('test');
+Route::domain('preview.valortracker.xyz')->group(function () {
+    Route::get('{id}', [DashboardController::class, 'shareAccount'])->name('share-loadout')->middleware('signed');
+});
 
 
 // auth routes
@@ -43,6 +48,7 @@ Route::middleware('user')->group(function () {
     Route::get('info/{id}', [DashboardController::class, 'info'])->name('skin-info');
     Route::get('match/{id}', [DashboardController::class, 'matchInfo'])->name('match-info');
     Route::get('player/{id}', [DashboardController::class, 'playerInfo'])->name('player-info');
+    Route::get('account', [DashboardController::class, 'accountInfo'])->name('account-info');
     Route::get('matches', [DashboardController::class, 'matchHistory'])->name('match-history');
     Route::get('loadout', [DashboardController::class, 'loadout'])->name('loadout');
     Route::get('logout', [RiotAuthController::class, 'logout'])->name('logout');

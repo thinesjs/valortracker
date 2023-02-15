@@ -17,14 +17,9 @@
     "src": "resources/dist/js/app.init.stylish.js",
     "isEntry": true
   },
-  "resources/dist/js/sidebarmenu.js": {
-    "file": "assets/sidebarmenu-b41af63f.js",
-    "src": "resources/dist/js/sidebarmenu.js",
-    "isEntry": true
-  },
-  "resources/dist/js/scroll.js": {
-    "file": "assets/scroll-514db1ec.js",
-    "src": "resources/dist/js/scroll.js",
+  "resources/dist/js/app-style-switcher.js": {
+    "file": "assets/app-style-switcher-e822a5c0.js",
+    "src": "resources/dist/js/app-style-switcher.js",
     "isEntry": true
   },
   "resources/dist/js/app.min.js": {
@@ -32,24 +27,14 @@
     "src": "resources/dist/js/app.min.js",
     "isEntry": true
   },
-  "resources/dist/js/custom.min.js": {
-    "file": "assets/custom.min-df542942.js",
-    "src": "resources/dist/js/custom.min.js",
+  "resources/dist/js/login.js": {
+    "file": "assets/login-f57982c5.js",
+    "src": "resources/dist/js/login.js",
     "isEntry": true
   },
-  "resources/extra-libs/jvector/jquery-jvectormap-us-aea-en.js": {
-    "file": "assets/jquery-jvectormap-us-aea-en-53247d04.js",
-    "src": "resources/extra-libs/jvector/jquery-jvectormap-us-aea-en.js",
-    "isEntry": true
-  },
-  "resources/dist/js/custom-app.js": {
-    "file": "assets/custom-app-706071fb.js",
-    "src": "resources/dist/js/custom-app.js",
-    "isEntry": true
-  },
-  "resources/dist/js/waves.js": {
-    "file": "assets/waves-08e008b3.js",
-    "src": "resources/dist/js/waves.js",
+  "resources/dist/js/sidebarmenu.js": {
+    "file": "assets/sidebarmenu-b41af63f.js",
+    "src": "resources/dist/js/sidebarmenu.js",
     "isEntry": true
   },
   "resources/dist/js/skinview.js": {
@@ -57,14 +42,44 @@
     "src": "resources/dist/js/skinview.js",
     "isEntry": true
   },
-  "resources/dist/js/app-style-switcher.js": {
-    "file": "assets/app-style-switcher-e822a5c0.js",
-    "src": "resources/dist/js/app-style-switcher.js",
+  "resources/dist/js/scroll.js": {
+    "file": "assets/scroll-514db1ec.js",
+    "src": "resources/dist/js/scroll.js",
+    "isEntry": true
+  },
+  "resources/extra-libs/jvector/jquery-jvectormap-us-aea-en.js": {
+    "file": "assets/jquery-jvectormap-us-aea-en-53247d04.js",
+    "src": "resources/extra-libs/jvector/jquery-jvectormap-us-aea-en.js",
     "isEntry": true
   },
   "resources/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js": {
     "file": "assets/perfect-scrollbar.jquery.min-f1d8f670.js",
     "src": "resources/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js",
+    "isEntry": true
+  },
+  "resources/dist/js/custom.min.js": {
+    "file": "assets/custom.min-df542942.js",
+    "src": "resources/dist/js/custom.min.js",
+    "isEntry": true
+  },
+  "resources/dist/js/custom-app.js": {
+    "file": "assets/custom-app-706071fb.js",
+    "src": "resources/dist/js/custom-app.js",
+    "isEntry": true
+  },
+  "resources/dist/js/feather.min.js": {
+    "file": "assets/feather.min-82b7159c.js",
+    "src": "resources/dist/js/feather.min.js",
+    "isEntry": true
+  },
+  "resources/dist/js/waves.js": {
+    "file": "assets/waves-08e008b3.js",
+    "src": "resources/dist/js/waves.js",
+    "isEntry": true
+  },
+  "resources/dist/js/moment.min.js": {
+    "file": "assets/moment.min-211edbed.js",
+    "src": "resources/dist/js/moment.min.js",
     "isEntry": true
   },
   "resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js": {
@@ -75,16 +90,6 @@
   "resources/extra-libs/sparkline/sparkline.js": {
     "file": "assets/sparkline-b904b2f3.js",
     "src": "resources/extra-libs/sparkline/sparkline.js",
-    "isEntry": true
-  },
-  "resources/dist/js/feather.min.js": {
-    "file": "assets/feather.min-82b7159c.js",
-    "src": "resources/dist/js/feather.min.js",
-    "isEntry": true
-  },
-  "resources/dist/js/moment.min.js": {
-    "file": "assets/moment.min-211edbed.js",
-    "src": "resources/dist/js/moment.min.js",
     "isEntry": true
   },
   "resources/libs/jquery/dist/jquery.min.js": {
