@@ -7,7 +7,7 @@
     <title>{{ config('app.name', 'ValorTracker') }}</title>
     <meta name="robots" content="noindex,nofollow">
     @vite('resources/js/app.js')
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
 </head>
 <body>
