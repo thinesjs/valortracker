@@ -289,7 +289,7 @@
                     <i class="nav-small-line"></i>
                     <span class="hide-menu">Extra</span>
                 </li>
-                <li class="sidebar-item">
+                {{-- <li class="sidebar-item">
                     <a
                         class="sidebar-link waves-effect waves-dark sidebar-link"
                         href="https://play.google.com/store/apps/details?id=com.thinesjs.valortracker"
@@ -298,7 +298,7 @@
                     >
                         <i class="ri-android-line"></i><span class="hide-menu">Android App</span>
                     </a>
-                </li>
+                </li> --}}
                 <li class="sidebar-item">
                     <a
                         class="sidebar-link waves-effect waves-dark sidebar-link"
