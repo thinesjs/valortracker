@@ -15,7 +15,7 @@
                     <h1 class="mb-0 fw-bold">Loadout</h1>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-4 col-6 d-md-flex align-items-center justify-content-end">
-                    <a href="" class="btn btn btn-rounded btn-light-info align-items-center ms-2">
+                    <a href="" class="btn btn-sm btn-rounded btn-light-info align-items-center ms-2">
                         <i class="ri-share-box-line me-2"></i>Share Loadout
                     </a>
                 </div>
@@ -205,10 +205,10 @@
                 </div>
             </div>
             <div class="mobile-display">
-                <div class="accordion" id="accordionExample">
+                <div class="accordion rounded rounded-3">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidearms" aria-expanded="false" aria-controls="collapseTwo">
+                          <button class="accordion-button collapsed text-black" type="button" data-bs-toggle="collapse" data-bs-target="#sidearms" aria-expanded="false" aria-controls="collapseTwo">
                             SIDEARMS
                           </button>
                         </h2>
@@ -256,7 +256,7 @@
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#smg" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="accordion-button collapsed text-black" type="button" data-bs-toggle="collapse" data-bs-target="#smg" aria-expanded="false" aria-controls="collapseTwo">
                             SMGS
                         </button>
                       </h2>
@@ -283,7 +283,7 @@
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shotgun" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="accordion-button collapsed text-black" type="button" data-bs-toggle="collapse" data-bs-target="#shotgun" aria-expanded="false" aria-controls="collapseThree">
                             SHOTGUNS
                         </button>
                       </h2>
@@ -310,7 +310,7 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rifle" aria-expanded="false" aria-controls="collapseThree">
+                          <button class="accordion-button collapsed text-black" type="button" data-bs-toggle="collapse" data-bs-target="#rifle" aria-expanded="false" aria-controls="collapseThree">
                             RIFLES
                           </button>
                         </h2>
@@ -351,7 +351,7 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <button class="accordion-button collapsed text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             SNIPER RIFLES
                           </button>
                         </h2>
@@ -378,7 +378,7 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mg" aria-expanded="false" aria-controls="collapseThree">
+                          <button class="accordion-button collapsed text-black" type="button" data-bs-toggle="collapse" data-bs-target="#mg" aria-expanded="false" aria-controls="collapseThree">
                             MACHINE GUNS
                           </button>
                         </h2>
@@ -405,7 +405,7 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#knife" aria-expanded="false" aria-controls="collapseThree">
+                          <button class="accordion-button collapsed text-black" type="button" data-bs-toggle="collapse" data-bs-target="#knife" aria-expanded="false" aria-controls="collapseThree">
                             MELEE
                           </button>
                         </h2>
