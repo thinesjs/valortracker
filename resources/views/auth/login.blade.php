@@ -59,7 +59,7 @@
               </div>
             </div>
             <div class="text-center">
-              <a href="{{ route('about') }}">About ValorTracker</a>
+              <a href="{{ route('about') }}">About ValoorTracker</a>
               <p class="text-muted text-center">ValorTracker was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</p>
             </div>
           </div>
