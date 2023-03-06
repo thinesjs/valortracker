@@ -15,10 +15,8 @@
                 justify-content-end
               "
                 >
-                </div>
-                <div class="text-end">
-                    <p href="" class="text-grey">Refreshes
-                        in {{ gmdate('H:i:s', $rawPlayerStore->FeaturedBundle->BundleRemainingDurationInSeconds) }}</p>
+                <p href="" class="text-grey">Refreshes
+                    in {{ gmdate('d \d\a\y\s h \h\o\u\r\s i \s\e\c\o\n\d\s', $rawPlayerStore->FeaturedBundle->BundleRemainingDurationInSeconds) }}</p>
                 </div>
             </div>
         </div>

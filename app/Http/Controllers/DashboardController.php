@@ -31,14 +31,20 @@ class DashboardController extends Controller
 
         $rawPlayerStore = $authObject->getPlayerStore($playerdata->sub, $authTokens);
 
-
-
         $weaponDisplayNames = array();
         foreach($rawPlayerStore->SkinsPanelLayout->SingleItemOffers as $i) {
             $weaponDisplayNames[] = $authObject->getWeaponName($i);
         }
 
-        return view("pages.store", compact('playerdata', 'rawPlayerStore', 'weaponDisplayNames'));
+        $nightmarketDisplayNames = array();
+        if(isset($rawPlayerStore->BonusStore)){
+            foreach($rawPlayerStore->BonusStore->BonusStoreOffers as $i) {
+                $nightmarketDisplayNames[] = $authObject->getWeaponName($i->Offer->Rewards[0]->ItemID);
+            }
+        }
+
+
+        return view("pages.store", compact('playerdata', 'rawPlayerStore', 'weaponDisplayNames', 'nightmarketDisplayNames'));
     }
 
     public function bundle()
@@ -48,7 +54,6 @@ class DashboardController extends Controller
 
         $bundle = $henrikAPI->getFeaturedBundle();
 
-
         $authTokens = $authObject->reAuth();
 
         $playerdata = $authObject->getPlayer($authTokens);
@@ -56,13 +61,9 @@ class DashboardController extends Controller
         $rawPlayerStore = $authObject->getPlayerStore($playerdata->sub, $authTokens);
         $bundleDetails = $henrikAPI->getFeaturedBundleDetails($rawPlayerStore->FeaturedBundle->Bundle->DataAssetID);
 
+        // dd($rawPlayerStore);
 
-        $weaponDisplayNames = array();
-        foreach($rawPlayerStore->SkinsPanelLayout->SingleItemOffers as $i) {
-            $weaponDisplayNames[] = $authObject->getWeaponName($i);
-        }
-
-        return view("pages.bundle", compact('playerdata', 'rawPlayerStore', 'weaponDisplayNames', 'bundle', 'bundleDetails'));
+        return view("pages.bundle", compact('playerdata', 'rawPlayerStore', 'bundle', 'bundleDetails'));
     }
 
     public function loadout()

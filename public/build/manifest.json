@@ -12,24 +12,14 @@
     "file": "assets/app-75b5a237.css",
     "src": "resources/js/app.css"
   },
+  "resources/dist/js/login.js": {
+    "file": "assets/login-f57982c5.js",
+    "src": "resources/dist/js/login.js",
+    "isEntry": true
+  },
   "resources/dist/js/app.init.stylish.js": {
     "file": "assets/app.init.stylish-c8ad0940.js",
     "src": "resources/dist/js/app.init.stylish.js",
-    "isEntry": true
-  },
-  "resources/dist/js/custom-app.js": {
-    "file": "assets/custom-app-706071fb.js",
-    "src": "resources/dist/js/custom-app.js",
-    "isEntry": true
-  },
-  "resources/dist/js/app-style-switcher.js": {
-    "file": "assets/app-style-switcher-e822a5c0.js",
-    "src": "resources/dist/js/app-style-switcher.js",
-    "isEntry": true
-  },
-  "resources/dist/js/custom.min.js": {
-    "file": "assets/custom.min-df542942.js",
-    "src": "resources/dist/js/custom.min.js",
     "isEntry": true
   },
   "resources/dist/js/scroll.js": {
@@ -42,29 +32,29 @@
     "src": "resources/dist/js/sidebarmenu.js",
     "isEntry": true
   },
-  "resources/dist/js/skinview.js": {
-    "file": "assets/skinview-0fcc2f43.js",
-    "src": "resources/dist/js/skinview.js",
-    "isEntry": true
-  },
-  "resources/dist/js/waves.js": {
-    "file": "assets/waves-08e008b3.js",
-    "src": "resources/dist/js/waves.js",
-    "isEntry": true
-  },
-  "resources/dist/js/login.js": {
-    "file": "assets/login-f57982c5.js",
-    "src": "resources/dist/js/login.js",
-    "isEntry": true
-  },
   "resources/dist/js/app.min.js": {
     "file": "assets/app.min-8b2d39d6.js",
     "src": "resources/dist/js/app.min.js",
     "isEntry": true
   },
-  "resources/dist/js/feather.min.js": {
-    "file": "assets/feather.min-82b7159c.js",
-    "src": "resources/dist/js/feather.min.js",
+  "resources/dist/js/custom-app.js": {
+    "file": "assets/custom-app-706071fb.js",
+    "src": "resources/dist/js/custom-app.js",
+    "isEntry": true
+  },
+  "resources/dist/js/custom.min.js": {
+    "file": "assets/custom.min-df542942.js",
+    "src": "resources/dist/js/custom.min.js",
+    "isEntry": true
+  },
+  "resources/dist/js/app-style-switcher.js": {
+    "file": "assets/app-style-switcher-e822a5c0.js",
+    "src": "resources/dist/js/app-style-switcher.js",
+    "isEntry": true
+  },
+  "resources/dist/js/skinview.js": {
+    "file": "assets/skinview-0fcc2f43.js",
+    "src": "resources/dist/js/skinview.js",
     "isEntry": true
   },
   "resources/extra-libs/jvector/jquery-jvectormap-us-aea-en.js": {
@@ -77,19 +67,29 @@
     "src": "resources/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js",
     "isEntry": true
   },
+  "resources/dist/js/waves.js": {
+    "file": "assets/waves-08e008b3.js",
+    "src": "resources/dist/js/waves.js",
+    "isEntry": true
+  },
   "resources/extra-libs/sparkline/sparkline.js": {
     "file": "assets/sparkline-b904b2f3.js",
     "src": "resources/extra-libs/sparkline/sparkline.js",
     "isEntry": true
   },
-  "resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js": {
-    "file": "assets/bootstrap.bundle.min-5d8c6124.js",
-    "src": "resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js",
+  "resources/dist/js/feather.min.js": {
+    "file": "assets/feather.min-82b7159c.js",
+    "src": "resources/dist/js/feather.min.js",
     "isEntry": true
   },
   "resources/dist/js/moment.min.js": {
     "file": "assets/moment.min-211edbed.js",
     "src": "resources/dist/js/moment.min.js",
+    "isEntry": true
+  },
+  "resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js": {
+    "file": "assets/bootstrap.bundle.min-5d8c6124.js",
+    "src": "resources/libs/bootstrap/dist/js/bootstrap.bundle.min.js",
     "isEntry": true
   },
   "resources/libs/jquery/dist/jquery.min.js": {
