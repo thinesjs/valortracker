@@ -45,6 +45,7 @@
                 @endforeach
             </div>
 
+            @if(!empty($nightmarketDisplayNames))
             <div class="page-titles">
                 <div class="row">
                     <div class="col-lg-8 col-md-6 col-12 align-self-center">
@@ -63,6 +64,7 @@
                     </div>
                 </div>
             </div>
+            
             <?php $i=0; ?>
             <div class="container-fluid">
                 <div class="row">
@@ -91,5 +93,6 @@
                 </div>
                 <h6 class="animated fadeInUp text-muted text-end">*Press on a skin to preview variants and levels.</h6>
             </div>
+            @endif
         </div>
 @endsection
