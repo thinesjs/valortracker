@@ -25,7 +25,7 @@ class Authentication {
         $this->headers = [
             "Accept-Encoding" => "gzip, deflate, br",
             'Content-Type' => 'application/json',
-            'User-Agent' => 'RiotClient/62.0.1.4852117.4789131 rso-auth (Windows;10;;Professional, x64)',
+            'User-Agent' => md5(rand()),
             'Host' => 'auth.riotgames.com',
             'Accept-Language' => 'en-US,en;q=0.9',
         ];

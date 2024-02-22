@@ -56,6 +56,9 @@
                         <button id="submit-btn" class="btn btn-primary waves-effect waves-light shadow-sm rounded">Login</button>
                     </div>
                 </form>
+                <div class="alert alert-gradient alert-dark w-full mt-3">
+                  Important: Rito have started to change the method of authenticating to their servers. If you see 500 error, that's rito making their moves.
+                </div>
               </div>
             </div>
             <div class="text-center">

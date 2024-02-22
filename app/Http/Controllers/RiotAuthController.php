@@ -44,6 +44,8 @@ class RiotAuthController extends Controller
             $authObject = new Authentication();
 
             $authTokens = $authObject->authByUsername(true, $request->multifactorcode);
+            dd($authTokens);
+
 
             if($authTokens == "2FA"){
                 return view("auth.mfa");
@@ -68,7 +70,6 @@ class RiotAuthController extends Controller
             ]);
 
             $authObject = new Authentication(["username"=>$request->username, "password"=>$request->password, "shard"=>"ap", "remember"=>true]);
-
             $authTokens = $authObject->authByUsername();
 
             if($authTokens == "2FA"){
